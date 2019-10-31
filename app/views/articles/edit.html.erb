@@ -1,5 +1,5 @@
-<%= form_tag articles_path do %>
-  <label>Article title:</label><br>
+<%= form_for @article do |f| %>
+  <%= f.label 'Article Title' %><br>
   <%= text_field_tag :title %><br>
   
   <label>Article Description</label><br>
